@@ -34,4 +34,7 @@ Unit test cases are located in `image_tagging/tests` folder. Use Pycharm or comm
 * What was missed in this implementation?
   * Added very few test cases and lots of enhancements need to be done such as containerization, separate config files for various environments, sha2 password hashing instead of plain text storage and many more optimizations
 * What would you have liked to have added?
-  * I could have increased the code coverage and could have added results of static code analysers
+  * could have increased the code coverage 
+  * could have added results of static code analysers
+  * open api documentation
+  * containerization
