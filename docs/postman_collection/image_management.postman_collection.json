@@ -1,0 +1,947 @@
+{
+	"info": {
+		"_postman_id": "0fedb6e8-1e94-4ecc-bb6f-f42aa863036d",
+		"name": "image_management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get document",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "ramesh.v",
+						"type": "default"
+					},
+					{
+						"key": "password",
+						"value": "randompass",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1.0/image/9d86af97-8b1e-4c2e-8d91-6fc255a57e4d",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1.0",
+						"image",
+						"9d86af97-8b1e-4c2e-8d91-6fc255a57e4d"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:5000/api/v1.0/image/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "username",
+								"value": "ramesh.v",
+								"type": "default"
+							},
+							{
+								"key": "password",
+								"value": "randompass",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Ramesh/Downloads/googlelogo_color_92x30dp.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1.0/image/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1.0",
+								"image",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.7.15"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 01 Jan 2023 20:22:24 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "29"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": \"200 OK\"\n}"
+				}
+			]
+		},
+		{
+			"name": "delete document details",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "username",
+						"value": "ramesh.v",
+						"type": "default"
+					},
+					{
+						"key": "password",
+						"value": "randompass",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1.0/image/36a1fe70-082f-482c-bec3-e18a487b5a02",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1.0",
+						"image",
+						"36a1fe70-082f-482c-bec3-e18a487b5a02"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete document details",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "username",
+								"value": "ramesh.v",
+								"type": "default"
+							},
+							{
+								"key": "password",
+								"value": "randompass",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1.0/image/9d86af97-8b1e-4c2e-8d91-6fc255a57e4d",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1.0",
+								"image",
+								"9d86af97-8b1e-4c2e-8d91-6fc255a57e4d"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.7.15"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 01 Jan 2023 20:56:49 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "29"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": \"200 OK\"\n}"
+				}
+			]
+		},
+		{
+			"name": "delete document tag using image name",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "username",
+						"value": "ramesh.v",
+						"type": "default"
+					},
+					{
+						"key": "password",
+						"value": "randompass",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"image_id\":\"3901c301-fb13-4a67-a93b-8d85be9fe311\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1.0/image/tag/new_tag",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1.0",
+						"image",
+						"tag",
+						"new_tag"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete document tag using image name",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "username",
+								"value": "ramesh.v",
+								"type": "default"
+							},
+							{
+								"key": "password",
+								"value": "randompass",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"image_id\":\"3901c301-fb13-4a67-a93b-8d85be9fe311\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1.0/image/tag/new_tag",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1.0",
+								"image",
+								"tag",
+								"new_tag"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.7.15"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 01 Jan 2023 21:27:26 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "29"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": \"200 OK\"\n}"
+				}
+			]
+		},
+		{
+			"name": "upload document",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "ramesh.v",
+						"type": "default"
+					},
+					{
+						"key": "password",
+						"value": "randompass",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Ramesh/Downloads/googlelogo_color_92x30dp.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1.0/image/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1.0",
+						"image",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:5000/api/v1.0/image/ Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "username",
+								"value": "ramesh.v",
+								"type": "default"
+							},
+							{
+								"key": "password",
+								"value": "randompass",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Ramesh/Downloads/googlelogo_color_92x30dp.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1.0/image/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1.0",
+								"image",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.7.15"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 01 Jan 2023 20:45:26 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "29"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": \"200 OK\"\n}"
+				}
+			]
+		},
+		{
+			"name": "tag an existing image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "ramesh.v",
+						"type": "default"
+					},
+					{
+						"key": "password",
+						"value": "randompass",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"image_id\":\"3901c301-fb13-4a67-a93b-8d85be9fe311\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1.0/image/tag/new_tag",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1.0",
+						"image",
+						"tag",
+						"new_tag"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "tag an existing image",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "username",
+								"value": "ramesh.v",
+								"type": "default"
+							},
+							{
+								"key": "password",
+								"value": "randompass",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"image_id\":\"3901c301-fb13-4a67-a93b-8d85be9fe311\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1.0/image/tag/new_tag",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1.0",
+								"image",
+								"tag",
+								"new_tag"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.7.15"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 01 Jan 2023 21:26:41 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "29"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": \"200 OK\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get images with tag",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "ramesh.v",
+						"type": "default"
+					},
+					{
+						"key": "password",
+						"value": "randompass",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1.0/image/tag/new_tag",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1.0",
+						"image",
+						"tag",
+						"new_tag"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get images with tag",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "username",
+								"value": "ramesh.v",
+								"type": "default"
+							},
+							{
+								"key": "password",
+								"value": "randompass",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1.0/image/tag/new_tag",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1.0",
+								"image",
+								"tag",
+								"new_tag"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.7.15"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 01 Jan 2023 21:33:58 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "123"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": [\n        \"3901c301-fb13-4a67-a93b-8d85be9fe311\",\n        \"8c185776-3e3d-4be1-ad17-7c991baba31d\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "get images with tag and date",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "ramesh.v",
+						"type": "default"
+					},
+					{
+						"key": "password",
+						"value": "randompass",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"created_date\": \"2023-01-02\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1.0/image/tag/new_tag",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1.0",
+						"image",
+						"tag",
+						"new_tag"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get images with tag and date",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "username",
+								"value": "ramesh.v",
+								"type": "default"
+							},
+							{
+								"key": "password",
+								"value": "randompass",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"created_date\": \"2023-01-02\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1.0/image/tag/new_tag",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1.0",
+								"image",
+								"tag",
+								"new_tag"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.7.15"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 01 Jan 2023 21:36:32 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "123"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": [\n        \"3901c301-fb13-4a67-a93b-8d85be9fe311\",\n        \"8c185776-3e3d-4be1-ad17-7c991baba31d\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "upload document with tag",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "ramesh.v",
+						"type": "default"
+					},
+					{
+						"key": "password",
+						"value": "randompass",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Ramesh/Downloads/googlelogo_color_92x30dp.png"
+						},
+						{
+							"key": "tags",
+							"value": "test_tag",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1.0/image/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1.0",
+						"image",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "upload document with tag",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "username",
+								"value": "ramesh.v",
+								"type": "default"
+							},
+							{
+								"key": "password",
+								"value": "randompass",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Ramesh/Downloads/googlelogo_color_92x30dp.png"
+								},
+								{
+									"key": "tags",
+									"value": "test_tag",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1.0/image/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1.0",
+								"image",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.7.15"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 01 Jan 2023 20:59:35 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "29"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": \"200 OK\"\n}"
+				}
+			]
+		}
+	]
+}
